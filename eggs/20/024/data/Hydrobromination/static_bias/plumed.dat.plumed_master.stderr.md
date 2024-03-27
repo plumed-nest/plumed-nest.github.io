@@ -1,0 +1,48 @@
+**Project ID:** [plumID:20.024]({{ '/' | absolute_url }}eggs/20/024/)  
+Stderr for source:  Hydrobromination/static_bias/plumed.dat   
+Download: [zipped raw stdout](plumed.dat.plumed_master.stdout.txt.zip) - [zipped raw stderr](plumed.dat.plumed_master.stderr.txt.zip) 
+{% raw %}
+<pre>
+#! Only the first 1000 rows of the error file are shown below
+#! To inspect the full error file, please download the zipped raw stderr file above
+WARNING: using a legacy ActionRegister.h include path, please use <<#include "core/ActionRegister.h">>
+WARNING: "core/Atoms.h" does not exist anymore in  version >=2.10, you should change your code.
+../../GAMBES.syS36C.cpp: In member function ‘virtual void PLMD::bias::GAMBES::prepare()’:
+../../GAMBES.syS36C.cpp:224:37: warning: ‘void PLMD::PlumedMain::DeprecatedAtoms::setCollectEnergy(bool) const’ is deprecated [-Wdeprecated-declarations]
+224 |   plumed.getAtoms().setCollectEnergy(true);
+|   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from ../../GAMBES.syS36C.cpp:22:
+/home/runner/opt/include/plumed_master/core/PlumedMain.h:110:10: note: declared here
+110 |     void setCollectEnergy(bool b) const;
+|          ^~~~~~~~~~~~~~~~
+../../GAMBES.syS36C.cpp: In member function ‘virtual void PLMD::bias::GAMBES::calculate()’:
+../../GAMBES.syS36C.cpp:230:36: warning: ‘double PLMD::PlumedMain::DeprecatedAtoms::getKbT() const’ is deprecated: Use Action::getkBT() N.B. this function also reads the TEMP keyword from the input for you. [-Wdeprecated-declarations]
+230 |   beta = 1/plumed.getAtoms().getKbT();
+|            ~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from ../../GAMBES.syS36C.cpp:22:
+/home/runner/opt/include/plumed_master/core/PlumedMain.h:104:12: note: declared here
+104 |     double getKbT() const ;
+|            ^~~~~~
+../../GAMBES.syS36C.cpp:231:63: warning: ‘double PLMD::PlumedMain::DeprecatedAtoms::getKBoltzmann() const’ is deprecated: Use Action::getKBoltzmann(). [-Wdeprecated-declarations]
+231 |   if(temp>0.0){ beta = 1/(temp*plumed.getAtoms().getKBoltzmann()) ; }
+|                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from ../../GAMBES.syS36C.cpp:22:
+/home/runner/opt/include/plumed_master/core/PlumedMain.h:102:12: note: declared here
+102 |     double getKBoltzmann() const ;
+|            ^~~~~~~~~~~~~
+../../GAMBES.syS36C.cpp:250:57: warning: ‘double PLMD::PlumedMain::DeprecatedAtoms::getEnergy() const’ is deprecated [-Wdeprecated-declarations]
+250 |   if(iter==0){energy_offset= plumed.getAtoms().getEnergy();}
+|                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from ../../GAMBES.syS36C.cpp:22:
+/home/runner/opt/include/plumed_master/core/PlumedMain.h:112:12: note: declared here
+112 |     double getEnergy() const ;
+|            ^~~~~~~~~
+../../GAMBES.syS36C.cpp:251:44: warning: ‘double PLMD::PlumedMain::DeprecatedAtoms::getEnergy() const’ is deprecated [-Wdeprecated-declarations]
+251 |   double energy=plumed.getAtoms().getEnergy() - energy_offset;
+|                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from ../../GAMBES.syS36C.cpp:22:
+/home/runner/opt/include/plumed_master/core/PlumedMain.h:112:12: note: declared here
+112 |     double getEnergy() const ;
+|            ^~~~~~~~~
+</pre>
+{% endraw %}
