@@ -1,0 +1,48 @@
+**Project ID:** [plumID:24.018]({{ '/' | absolute_url }}eggs/24/018/)  
+**Source:** 00_Metadynamics/TEST_meta/Test13_longt/plumed.dat  
+**Originally used with PLUMED version:** 1.3  
+**Stable:** [zipped raw stdout](plumed.dat.plumed.stdout.txt.zip) - [zipped raw stderr](plumed.dat.plumed.stderr.txt.zip) - [stderr](plumed.dat.plumed.stderr)  
+**Master:** [zipped raw stdout](plumed.dat.plumed_master.stdout.txt.zip) - [zipped raw stderr](plumed.dat.plumed_master.stderr.txt.zip) - [stderr](plumed.dat.plumed_master.stderr)  
+
+{% raw %}
+<div style="width: 100%; float:left">
+<div style="width: 90%; float:left" id="value_details_data/00_Metadynamics/TEST_meta/Test13_longt/plumed.dat"> Click on the labels of the actions for more information on what each action computes </div>
+<div style="width: 10%; float:left"><table><tr><td style="padding:1px"><a href="plumed.dat.plumed.stderr"><img src="https://img.shields.io/badge/v2.9-failed-red.svg" alt="tested onv2.9" /></a></td></tr><tr><td style="padding:1px"><a href="plumed.dat.plumed_master.stderr"><img src="https://img.shields.io/badge/master-failed-red.svg" alt="tested onmaster" /></a></td></tr></table></div></div>
+<pre style="width=97%;">
+<div class="tooltip" style="color:green">HILLS<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div> RESTART HEIGHT 0005 W_STRIDE 150
+<span style="color:blue" class="comment">#WELLTEMPERED SIMTEMP 300 BIASFACTOR 50</span>
+<br/><div class="tooltip" style="color:green">PRINT<div class="right">Print quantities to a file. <a href="https://www.plumed.org/doc-master/user-doc/html/_p_r_i_n_t.html" style="color:green">More details</a><i></i></div></div> W_STRIDE 1
+<br/><span style="display:none;" id="data/00_Metadynamics/TEST_meta/Test13_longt/plumed.dat">The PRINT action with label <b></b> calculates something</span><div class="tooltip" style="color:green">C<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div>
+<div class="tooltip" style="color:green">1<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div> 2 
+<div class="tooltip" style="color:green">C<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div>
+<br/><div class="tooltip" style="color:green">O<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div>
+ LOOP 3 83 1
+<div class="tooltip" style="color:green">O<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div>
+<br/><div class="tooltip" style="color:green">N<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div>
+<div class="tooltip" style="color:green">84<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div> 85
+<div class="tooltip" style="color:green">N<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div>
+<br/><div class="tooltip" style="color:green">H<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div>
+<div class="tooltip" style="color:green">LOOP<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div> 86 251 1
+<div class="tooltip" style="color:green">H<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div>
+<br/><div class="tooltip" style="color:green">SPATHCOORDTABLE<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div> NSP 4 LIST C O N H NN 8 MM 14 R_0 340 340 340 283 340 340 283 340 283 265 LAMBDA 0139 SIGMA 003
+                                   
+<div class="tooltip" style="color:green">ZPATHCOORDTABLE<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div> NSP 4 LIST C O N H NN 8 MM 14 R_0 340 340 340 283 340 340 283 340 283 265 LAMBDA 0139 SIGMA 02
+<br/><span style="color:blue" class="comment"># dist C-C</span>
+<div class="tooltip" style="color:green">DISTANCE<div class="right">Calculate the distance between a pair of atoms. <a href="https://www.plumed.org/doc-master/user-doc/html/_d_i_s_t_a_n_c_e.html" style="color:green">More details</a><i></i></div></div> LIST 1 2
+<span style="color:blue" class="comment"># dist N-N</span>
+<div class="tooltip" style="color:green">DISTANCE<div class="right">Calculate the distance between a pair of atoms. <a href="https://www.plumed.org/doc-master/user-doc/html/_d_i_s_t_a_n_c_e.html" style="color:green">More details</a><i></i></div></div> LIST 84 85
+<span style="color:blue" class="comment"># dist C-N</span>
+<div class="tooltip" style="color:green">DISTANCE<div class="right">Calculate the distance between a pair of atoms. <a href="https://www.plumed.org/doc-master/user-doc/html/_d_i_s_t_a_n_c_e.html" style="color:green">More details</a><i></i></div></div> LIST 2 84
+<div class="tooltip" style="color:green">DISTANCE<div class="right">Calculate the distance between a pair of atoms. <a href="https://www.plumed.org/doc-master/user-doc/html/_d_i_s_t_a_n_c_e.html" style="color:green">More details</a><i></i></div></div> LIST 2 85
+<div class="tooltip" style="color:green">DISTANCE<div class="right">Calculate the distance between a pair of atoms. <a href="https://www.plumed.org/doc-master/user-doc/html/_d_i_s_t_a_n_c_e.html" style="color:green">More details</a><i></i></div></div> LIST 1 84
+<div class="tooltip" style="color:green">DISTANCE<div class="right">Calculate the distance between a pair of atoms. <a href="https://www.plumed.org/doc-master/user-doc/html/_d_i_s_t_a_n_c_e.html" style="color:green">More details</a><i></i></div></div> LIST 1 85
+<br/><span style="color:blue" class="comment">#UWALL CV 2 LIMIT 1. KAPPA 0.05 EXP 2</span>
+<br/><div class="tooltip" style="color:green">UWALL<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div> CV 3 LIMIT 10 KAPPA 001 EXP 2
+<div class="tooltip" style="color:green">UWALL<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div> CV 4 LIMIT 10 KAPPA 001 EXP 2
+<div class="tooltip" style="color:green">UWALL<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div> CV 5 LIMIT 10 KAPPA 001 EXP 2
+<div class="tooltip" style="color:green">UWALL<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div> CV 6 LIMIT 10 KAPPA 001 EXP 2
+<div class="tooltip" style="color:green">UWALL<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div> CV 7 LIMIT 10 KAPPA 001 EXP 2
+<div class="tooltip" style="color:green">UWALL<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div> CV 8 LIMIT 10 KAPPA 001 EXP 2
+<div class="tooltip" style="color:green">ENDMETA<div class="right">This action is not part of PLUMED and was included by using a LOAD command <a href="https://www.plumed.org/doc-master/user-doc/html/_l_o_a_d.html" style="color:green">More details</a><i></i></div></div>
+</pre>
+{% endraw %}
