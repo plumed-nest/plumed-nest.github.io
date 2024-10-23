@@ -1,0 +1,739 @@
+# file containing egg database.
+- id: '24.021'
+  name: 'Ab initio machine learning simulation of calcium carbonate from aqueous solutions to the solid state'
+  shortname: 'Ab initio machi...'
+  category: chemistry
+  keywords: ion pairing, caco3, opes, proton transfer, crystallization
+  shortkeywords: ion pairing, caco3, opes,...
+  contributor: Pablo Piaggi
+  doi: unpublished
+  path: eggs/24/021/
+  reference: 'unpublished'
+  ref_url: ''
+  ninputs: 17
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: OPES_METAD UPPER_WALLS COORDINATION PRINT DISTANCE ENERGY
+  modules: opes generic colvar bias
+  time: 98.588477194
+- id: '24.017'
+  name: 'Absolute Binding Free Energies with OneOPES'
+  shortname: 'Absolute Bindin...'
+  category: methods
+  keywords: protein ligand binding free energy, oneopes, metadynamics, brd4, hsp90, absolute binding free energy
+  shortkeywords: protein ligand binding fr...
+  contributor: Francesco Gervasio
+  doi: 10.26434/chemrxiv-2024-sjgg2-v2
+  path: eggs/24/017/
+  reference: 'M. Karrenbrock, A. Borsatto, V. Rizzi, D. Lukauskis, S. Aureli, F. L. Gervasio, Absolute Binding Free Energies with OneOPES (2024)'
+  ref_url: 'http://dx.doi.org/10.26434/chemrxiv-2024-sjgg2-v2'
+  ninputs: 20
+  nfail: 0
+  nfailm: 0
+  preprint: 1
+  actions: RMSD INCLUDE WHOLEMOLECULES COM OPES_METAD_EXPLORE METAD BIASVALUE TORSION RESTART OPES_EXPANDED COORDINATION PRINT MOLINFO MATHEVAL GROUP ECV_MULTITHERMAL CUSTOM CONTACTMAP ENERGY UPPER_WALLS WRAPAROUND LOWER_WALLS PROJECTION_ON_AXIS CONSTANT
+  modules: vatom core generic bias colvar setup function opes
+  time: 131.231657449
+- id: '24.008'
+  name: 'yCD Metadynamics'
+  shortname: 'yCD Metadynamic...'
+  category: bio
+  keywords: volume-based MetaD, path CVs, infrequent MetaD, product release
+  shortkeywords: volume-based MetaD, path ...
+  contributor: James McCarty
+  doi: 10.1021/acs.jpcb.3c07972
+  path: eggs/24/008/
+  reference: 'K. A. Croney, J. McCarty, Exploring Product Release from Yeast Cytosine Deaminase with Metadynamics. The Journal of Physical Chemistry B. 128, 3102–3112 (2024)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jpcb.3c07972'
+  ninputs: 6
+  nfail: 2
+  nfailm: 2
+  preprint: 0
+  actions: HISTOGRAM RMSD INCLUDE WHOLEMOLECULES FIT_TO_TEMPLATE COM METAD REWEIGHT_METAD GPATH COMMITTOR COORDINATION PRINT ENDPLUMED READ MOLINFO MATHEVAL DUMPGRID GROUP CONTACTMAP COMBINE DISTANCE CONVERT_TO_FES UPPER_WALLS FLUSH WRAPAROUND FIXEDATOM PATH
+  modules: vatom generic bias colvar mapping function gridtools core
+  time: 34.33077962300001
+- id: '23.045'
+  name: 'Minute-timescale simulations of G Protein Coupled Receptor A2A activation mechanism reveal a receptor pseudo-active state'
+  shortname: 'Minute-timescal...'
+  category: bio
+  keywords: Path CVs Metadynamics, GPCRs activation transition
+  shortkeywords: Path CVs Metadynamics, GP...
+  contributor: Vittorio Limongelli
+  doi: 10.1101/2023.09.14.557711
+  path: eggs/23/045/
+  reference: 'V. M. D’Amore, P. Conflitti, L. Marinelli, V. Limongelli, Minute-timescale simulations of G Protein Coupled Receptor A2A activation mechanism reveal a receptor pseudo-active state (2023)'
+  ref_url: 'http://dx.doi.org/10.1101/2023.09.14.557711'
+  ninputs: 3
+  nfail: 0
+  nfailm: 0
+  preprint: 1
+  actions: SUM INCLUDE SECONDARY_STRUCTURE_RMSD UPPER_WALLS PATHMSD LESS_THAN CONTACTMAP FUNCPATHMSD METAD LOWER_WALLS ALPHARMSD PRINT DISTANCE MOLINFO
+  modules: secondarystructure function colvar bias generic
+  time: 20.80345633799999
+- id: '23.044'
+  name: 'Synthesis of C60/[10]CPP-Catenanes by Regioselective, Nanocapsule-Templated Bingel Bis-Addition'
+  shortname: 'Synthesis of C6...'
+  category: materials
+  keywords: metadynamics, interlocked molecules
+  shortkeywords: metadynamics, interlocked...
+  contributor: Luigi Leanza
+  doi: 10.1002/anie.202309393
+  path: eggs/23/044/
+  reference: 'F. M. Steudel, E. Ubasart, L. Leanza, M. Pujals, T. Parella, G. M. Pavan, X. Ribas, M. von Delius, Synthesis of C60/[10]CPP‐Catenanes by Regioselective, Nanocapsule‐Templated Bingel Bis‐Addition. Angewandte Chemie International Edition. 62 (2023)'
+  ref_url: 'http://dx.doi.org/10.1002/anie.202309393'
+  ninputs: 2
+  nfail: 0
+  nfailm: 1
+  preprint: 0
+  actions: COMMITTOR CONVERT_TO_FES HISTOGRAM DUMPGRID GROUP COORDINATION PRINT METAD ENDPLUMED READ
+  modules: generic bias colvar gridtools core
+  time: 11.769447801999945
+- id: '23.039'
+  name: 'Thermodynamically inspired machine-learned reaction coordinates for hydrophobic ligand dissociation'
+  shortname: 'Thermodynamical...'
+  category: chemistry
+  keywords: metadynamics, ligand dissociation
+  shortkeywords: metadynamics, ligand diss...
+  contributor: Eric Beyerle
+  doi: 10.1021/acs.jpcb.3c08304
+  path: eggs/23/039/
+  reference: 'E. R. Beyerle, P. Tiwary, Thermodynamically Optimized Machine-Learned Reaction Coordinates for Hydrophobic Ligand Dissociation. The Journal of Physical Chemistry B. 128, 755–767 (2024)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jpcb.3c08304'
+  ninputs: 2
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: UPPER_WALLS DUMPMASSCHARGE CENTER PRINT METAD FIXEDATOM COMBINE DISTANCE MOLINFO RESTRAINT
+  modules: vatom function colvar generic bias
+  time: 12.44717041399997
+- id: '23.038'
+  name: 'Determinants of Neutral Antagonism and Inverse Agonism in the β2-adrenergic receptor'
+  shortname: 'Determinants of...'
+  category: bio
+  keywords: protein coupled receptor, beta-adrenergic, receptor activation, antagonism, inverse agonism, metadynamics
+  shortkeywords: protein coupled receptor,...
+  contributor: Timothy Clark
+  doi: 10.1021/acs.jcim.3c01763
+  path: eggs/23/038/
+  reference: 'J. C. Calderón, P. Ibrahim, D. Gobbo, F. L. Gervasio, T. Clark, Determinants of Neutral Antagonism and Inverse Agonism in the β2-Adrenergic Receptor. Journal of Chemical Information and Modeling. 64, 2045–2057 (2024)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jcim.3c01763'
+  ninputs: 1
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: MATHEVAL RMSD WHOLEMOLECULES PRINT METAD DISTANCE MOLINFO
+  modules: generic bias function colvar
+  time: 7.1780936720000454
+- id: '23.027'
+  name: 'CmuMD simulations of NaCl(aq) at NaCl'
+  shortname: 'CmuMD simulatio...'
+  category: chemistry
+  keywords: CmuMD, DFS, Q3, Pair Entropy
+  shortkeywords: CmuMD, DFS, Q3, Pair Entr...
+  contributor: Aaron Finney
+  doi: 10.1039/D3FD00133D
+  path: eggs/23/027/
+  reference: 'A. R. Finney, M. Salvalaglio, Properties of aqueous electrolyte solutions at carbon electrodes: effects of concentration and surface charge on solution structure, ion clustering and thermodynamics in the electric double layer. Faraday Discussions. 249, 334–362 (2024)'
+  ref_url: 'http://dx.doi.org/10.1039/D3FD00133D'
+  ninputs: 3
+  nfail: 1
+  nfailm: 3
+  preprint: 0
+  actions: CLUSTER_DISTRIBUTION DFSCLUSTERING DENSITY HISTOGRAM DUMPGRID GROUP CONTACT_MATRIX COORDINATIONNUMBER LOAD LOCAL_AVERAGE FIXEDATOM PRINT LOCAL_Q3 CLUSTER_NATOMS UNITS Q3 AROUND RESTRAINT
+  modules: symfunc vatom setup generic bias adjmat volumes gridtools core clusters
+  time: 16.268205651000017
+- id: '23.023'
+  name: 'Rational design of novel biomimetic sequence-defined polymers for mineralization applications'
+  shortname: 'Rational design...'
+  category: methods
+  keywords: metadynamics, surface binding, biomimetic mineralization
+  shortkeywords: metadynamics, surface bin...
+  contributor: Kaylyn Torkelson
+  doi: 10.1021/acs.chemmater.3c02216
+  path: eggs/23/023/
+  reference: 'K. Torkelson, N. Y. Naser, X. Qi, Z. Li, W. Yang, K. Pushpavanam, C.-L. Chen, F. Baneyx, J. Pfaendtner, Rational Design of Novel Biomimetic Sequence-Defined Polymers for Mineralization Applications. Chemistry of Materials. 36, 786–794 (2024)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.chemmater.3c02216'
+  ninputs: 3
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: PBMETAD COM UPPER_WALLS COORDINATION PRINT DISTANCE GYRATION
+  modules: generic vatom colvar bias
+  time: 19.04369076399996
+- id: '23.015'
+  name: 'MPCs aggregation'
+  shortname: 'MPCs aggregatio...'
+  category: bio
+  keywords: opes_explore, dimerization, MPCs, self-assembly
+  shortkeywords: opes_explore, dimerizatio...
+  contributor: Vikas Tiwari
+  doi: 10.1021/acs.jpclett.3c01770
+  path: eggs/23/015/
+  reference: 'V. Tiwari, T. Karmakar, Understanding Molecular Aggregation of Ligand-Protected Atomically-Precise Metal Nanoclusters. The Journal of Physical Chemistry Letters. 14, 6686–6694 (2023)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jpclett.3c01770'
+  ninputs: 8
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: GROUP WHOLEMOLECULES UPPER_WALLS COM COORDINATION CENTER PRINT CUSTOM METAD LOWER_WALLS DISTANCE OPES_METAD_EXPLORE
+  modules: opes vatom generic colvar bias function core
+  time: 46.79507409300004
+- id: '23.010'
+  name: 'An Efficient Metadynamics-Based Protocol To Model the Binding Affinity and the Transition State Ensemble of G‑Protein-Coupled Receptor Ligands'
+  shortname: 'An Efficient Me...'
+  category: bio
+  keywords: GPCR, binding free energy, free energy surface
+  shortkeywords: GPCR, binding free energy...
+  contributor: Timothy Clark
+  doi: 10.1021/acs.jcim.6b00772
+  path: eggs/23/010/
+  reference: 'N. Saleh, P. Ibrahim, G. Saladino, F. L. Gervasio, T. Clark, An Efficient Metadynamics-Based Protocol To Model the Binding Affinity and the Transition State Ensemble of G-Protein-Coupled Receptor Ligands. Journal of Chemical Information and Modeling. 57, 1210–1217 (2017)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jcim.6b00772'
+  ninputs: 1
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: MATHEVAL WHOLEMOLECULES UPPER_WALLS PRINT LOWER_WALLS METAD DISTANCE CONSTANT BIASVALUE
+  modules: colvar bias function generic
+  time: 7.103711804999989
+- id: '23.006'
+  name: 'Transcription factor unbinding'
+  shortname: 'Transcription f...'
+  category: bio
+  keywords: metadynamics, DNA, conformational changes
+  shortkeywords: metadynamics, DNA, confor...
+  contributor: Malin Lüking
+  doi: 10.1063/5.0146899
+  path: eggs/23/006/
+  reference: 'M. Lüking, D. van der Spoel, J. Elf, G. A. Tribello, Can molecular dynamics be used to simulate biomolecular recognition? The Journal of Chemical Physics. 158 (2023)'
+  ref_url: 'http://dx.doi.org/10.1063/5.0146899'
+  ninputs: 14
+  nfail: 3
+  nfailm: 3
+  preprint: 0
+  actions: SUM COM SECONDARY_STRUCTURE_RMSD PRINT LESS_THAN CONTACTMAP METAD ANGLE ALPHARMSD DUMPFORCES DISTANCE MOLINFO
+  modules: secondarystructure vatom function colvar generic bias
+  time: 80.34964569800002
+- id: '22.042'
+  name: 'Metadynamics of NSP10 and variants'
+  shortname: 'Metadynamics of...'
+  category: bio
+  keywords: metadynamics, NSP10, crystal structure, variants
+  shortkeywords: metadynamics, NSP10, crys...
+  contributor: Shozeb Haider
+  doi: 10.7554/eLife.87884.2
+  path: eggs/22/042/
+  reference: 'H. Wang, S. R. A. Rizvi, D. Dong, J. Lou, Q. Wang, W. Sopipong, Y. Su, F. Najar, P. K. Agarwal, F. Kozielski, S. Haider, Emerging variants of SARS-CoV-2 NSP10 highlight strong functional conservation of its binding to two non-structural proteins, NSP14 and NSP16 (2023)'
+  ref_url: 'http://dx.doi.org/10.7554/eLife.87884.2'
+  ninputs: 12
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: TORSION METAD PRINT
+  modules: generic bias colvar
+  time: 69.02515287000006
+- id: '22.041'
+  name: 'Skipping the Replica Exchange Ladder with Normalizing Flows'
+  shortname: 'Skipping the Re...'
+  category: methods
+  keywords: OPES, alanine, normalizing flows, replica exchange
+  shortkeywords: OPES, alanine, normalizin...
+  contributor: Michele Invernizzi
+  doi: 10.1021/acs.jpclett.2c03327
+  path: eggs/22/041/
+  reference: 'M. Invernizzi, A. Krämer, C. Clementi, F. Noé, Skipping the Replica Exchange Ladder with Normalizing Flows. The Journal of Physical Chemistry Letters. 13, 11643–11649 (2022)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jpclett.2c03327'
+  ninputs: 3
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: TORSION OPES_METAD OPES_EXPANDED ECV_MULTITHERMAL PRINT ENDPLUMED POSITION UNITS ENERGY
+  modules: opes setup generic colvar
+  time: 18.529280116999985
+- id: '22.033'
+  name: 'Reciprocal barrier restraint. Application to PROTAC passive permeability prediction'
+  shortname: 'Reciprocal barr...'
+  category: methods
+  keywords: PROTAC, membrane permeability, PMF, restraint, meta-eABF, metadynamics, DRR
+  shortkeywords: PROTAC, membrane permeabi...
+  contributor: Istvan Kolossvary
+  doi: 10.1021/acs.jpcb.3c02028
+  path: eggs/22/033/
+  reference: 'I. Kolossváry, W. Sherman, Comprehensive Approach to Simulating Large Scale Conformational Changes in Biological Systems Utilizing a Path Collective Variable and New Barrier Restraint. The Journal of Physical Chemistry B. 127, 5214–5229 (2023)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jpcb.3c02028'
+  ninputs: 1
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: COM DRR FLUSH PRINT METAD CUSTOM DISTANCE UNITS BIASVALUE
+  modules: drr vatom function generic bias colvar setup
+  time: 7.520404128999985
+- id: '22.023'
+  name: 'Determination of the structure and dynamics of the fuzzy coat of an amyloid fibril of IAPP using cryo-electron microscopy'
+  shortname: 'Determination o...'
+  category: bio
+  keywords: CryoEM, MEMMI,EMMI, Metadynamics, Metainference, IAPP, structural ensemble
+  shortkeywords: CryoEM, MEMMI,EMMI, Metad...
+  contributor: Faidon Brotzakis
+  doi: 10.1021/acs.biochem.3c00010
+  path: eggs/22/023/
+  reference: 'Z. Faidon Brotzakis, T. Löhr, S. Truong, S. Hoff, M. Bonomi, M. Vendruscolo, Determination of the Structure and Dynamics of the Fuzzy Coat of an Amyloid Fibril of IAPP Using Cryo-Electron Microscopy. Biochemistry. 62, 2407–2416 (2023)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.biochem.3c00010'
+  ninputs: 3
+  nfail: 3
+  nfailm: 3
+  preprint: 0
+  actions: TORSION RESTART RMSD GROUP WHOLEMOLECULES UPPER_WALLS COM COORDINATION PRINT EMMI MOLINFO PBMETAD BIASVALUE
+  modules: isdb vatom generic bias setup colvar core
+  time: 13.049358046000066
+- id: '22.017'
+  name: 'Water regulates the residence time of Benzamidine in Trypsin'
+  shortname: 'Water regulates...'
+  category: bio
+  keywords: ligand binding, water, opes, benzamidine trypsin, unbinding rates, machine learning, Deep-LDA, Deep-TICA
+  shortkeywords: ligand binding, water, op...
+  contributor: Narjes Ansari
+  doi: 10.1038/s41467-022-33104-3
+  path: eggs/22/017/
+  reference: 'N. Ansari, V. Rizzi, M. Parrinello, Water regulates the residence time of Benzamidine in Trypsin. Nature Communications. 13 (2022)'
+  ref_url: 'http://dx.doi.org/10.1038/s41467-022-33104-3'
+  ninputs: 2
+  nfail: 2
+  nfailm: 2
+  preprint: 0
+  actions: OPES_METAD MATHEVAL COMMITTOR PYTORCH_MODEL RMSD GROUP WHOLEMOLECULES FIT_TO_TEMPLATE UPPER_WALLS COORDINATION CENTER FIXEDATOM LOWER_WALLS PRINT CUSTOM DISTANCE
+  modules: core vatom pytorch colvar function generic bias opes
+  time: 10.292741116000002
+- id: '22.016'
+  name: 'Homogeneous ice nucleation in an ab initio machine learning model of water'
+  shortname: 'Homogeneous ice...'
+  category: chemistry
+  keywords: ice, water, nucleation, seeding, environment similarity, interfacial free energy, interfaces
+  shortkeywords: ice, water, nucleation, s...
+  contributor: Pablo Piaggi
+  doi: 10.1073/pnas.2207294119
+  path: eggs/22/016/
+  reference: 'P. M. Piaggi, J. Weis, A. Z. Panagiotopoulos, P. G. Debenedetti, R. Car, Homogeneous ice nucleation in an ab initio machine-learning model of water. Proceedings of the National Academy of Sciences. 119 (2022)'
+  ref_url: 'http://dx.doi.org/10.1073/pnas.2207294119'
+  ninputs: 14
+  nfail: 0
+  nfailm: 8
+  preprint: 0
+  actions: OPES_METAD RESTART MEAN DISTANCE_MATRIX HISTOGRAM GROUP MATRIX_VECTOR_PRODUCT MORE_THAN SUM UPPER_WALLS DUMPGRID PRINT CUSTOM ONES VOLUME AROUND ENERGY ENVIRONMENTSIMILARITY
+  modules: envsim core function setup bias generic colvar adjmat gridtools volumes matrixtools opes
+  time: 92.58007473700002
+- id: '22.015'
+  name: 'Enhancing the Inhomogeneous Photodynamics of Canonical Bacteriophytochrome'
+  shortname: 'Enhancing the I...'
+  category: bio
+  keywords: photodynamics, bacteriophytochrome, variationally enhanced sampling
+  shortkeywords: photodynamics, bacterioph...
+  contributor: Jakub Rydzewski
+  doi: 10.1021/acs.jpcb.2c00131
+  path: eggs/22/015/
+  reference: 'J. Rydzewski, K. Walczewska-Szewc, S. Czach, W. Nowak, K. Kuczera, Enhancing the Inhomogeneous Photodynamics of Canonical Bacteriophytochrome. The Journal of Physical Chemistry B. 126, 2647–2657 (2022)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jpcb.2c00131'
+  ninputs: 2
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: TORSION TD_UNIFORM PRINT OPT_AVERAGED_SGD BF_FOURIER VES_LINEAR_EXPANSION
+  modules: ves generic colvar
+  time: 13.328497244999994
+- id: '22.013'
+  name: 'Ligand dissociation from PreQ1 riboswitch'
+  shortname: 'Ligand dissocia...'
+  category: bio
+  keywords: ligand, RNA, metadynamics, pRAVE
+  shortkeywords: ligand, RNA, metadynamics...
+  contributor: Yihang Wang
+  doi: 10.1021/acscentsci.2c00149
+  path: eggs/22/013/
+  reference: 'Y. Wang, S. Parmar, J. S. Schneekloth, P. Tiwary, Interrogating RNA–Small Molecule Interactions with Structure Probing and Artificial Intelligence-Augmented Molecular Simulations. ACS Central Science. 8, 741–748 (2022)'
+  ref_url: 'http://dx.doi.org/10.1021/acscentsci.2c00149'
+  ninputs: 5
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: MEAN COMMITTOR CONTACT_MATRIX RMSD GROUP COM WHOLEMOLECULES COORDINATIONNUMBER MATRIX_VECTOR_PRODUCT SUM PRINT CUSTOM METAD COMBINE ONES DISTANCE MOLINFO
+  modules: symfunc vatom function colvar generic bias adjmat matrixtools core
+  time: 33.30603105799992
+- id: '22.008'
+  name: 'Ab initio metadynamics determination of temperature-dependent free-energy landscape in ultrasmall silver clusters'
+  shortname: 'Ab initio metad...'
+  category: materials
+  keywords: Well tempered metadynamics, ab-initio, ase
+  shortkeywords: Well tempered metadynamic...
+  contributor: Daniel Sucerquia
+  doi: 10.1063/5.0082332
+  path: eggs/22/008/
+  reference: 'D. Sucerquia, C. Parra, P. Cossio, O. Lopez-Acevedo, Ab initio metadynamics determination of temperature-dependent free-energy landscape in ultrasmall silver clusters. The Journal of Chemical Physics. 156 (2022)'
+  ref_url: 'http://dx.doi.org/10.1063/5.0082332'
+  ninputs: 7
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: MEAN CONTACT_MATRIX GROUP UPPER_WALLS COM COORDINATIONNUMBER COORDINATION FLUSH MATRIX_VECTOR_PRODUCT LOWER_WALLS METAD COMBINE DISTANCE ONES CUSTOM UNITS GYRATION
+  modules: symfunc vatom function bias colvar generic setup adjmat matrixtools core
+  time: 40.44896739700005
+- id: '21.045'
+  name: 'QM/MM metadynamics of thiol-disulfide exchange between methylthiolate and dimethyldisulfide in water with an imposed external electrostatic potential (ESP)'
+  shortname: 'QM/MM metadynam...'
+  category: chemistry
+  keywords: metadynamics, QM/MM, electrostatic potential, thiol-disulfide exchange
+  shortkeywords: metadynamics, QM/MM, elec...
+  contributor: Denis Maag
+  doi: 10.1039/D1CP03129E
+  path: eggs/21/045/
+  reference: 'D. Maag, M. Putzu, C. L. Gómez-Flores, F. Gräter, M. Elstner, T. Kubař, Electrostatic interactions contribute to the control of intramolecular thiol–disulfide isomerization in a protein. Physical Chemistry Chemical Physics. 23, 26366–26375 (2021)'
+  ref_url: 'http://dx.doi.org/10.1039/D1CP03129E'
+  ninputs: 1
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: MEAN CONTACT_MATRIX GROUP UPPER_WALLS COORDINATIONNUMBER MATRIX_VECTOR_PRODUCT COORDINATION PRINT LOWER_WALLS METAD COMBINE ONES DISTANCE
+  modules: symfunc function bias colvar generic adjmat matrixtools core
+  time: 7.518696148999993
+- id: '21.035'
+  name: 'CmuMD simulations of NaCl(aq) at NaCl'
+  shortname: 'CmuMD simulatio...'
+  category: chemistry
+  keywords: CmuMD, interface
+  shortkeywords: CmuMD, interface
+  contributor: Aaron Finney
+  doi: 10.1016/j.cherd.2022.02.018
+  path: eggs/21/035/
+  reference: 'A. R. Finney, M. Salvalaglio, Bridging the gap between mesoscopic and molecular models of solid/liquid interfaces out-of-equilibrium. Chemical Engineering Research and Design. 180, 285–295 (2022)'
+  ref_url: 'http://dx.doi.org/10.1016/j.cherd.2022.02.018'
+  ninputs: 2
+  nfail: 2
+  nfailm: 2
+  preprint: 0
+  actions: GROUP FIXEDATOM PRINT DISTANCE LOAD RESTRAINT
+  modules: vatom setup generic colvar bias core
+  time: 12.189791816000024
+- id: '21.020'
+  name: 'Reweighted Jarzynski sampling'
+  shortname: 'Reweighted Jarz...'
+  category: methods
+  keywords: free energies, steered MD, neural network, nonequilibrium work, nucleation, chemical reactions
+  shortkeywords: free energies, steered MD...
+  contributor: Kristof Bal
+  doi: 10.1021/acs.jctc.1c00574
+  path: eggs/21/020/
+  reference: 'K. M. Bal, Reweighted Jarzynski Sampling: Acceleration of Rare Events and Free Energy Calculation with a Bias Potential Learned from Nonequilibrium Work. Journal of Chemical Theory and Computation. 17, 6766–6774 (2021)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jctc.1c00574'
+  ninputs: 15
+  nfail: 0
+  nfailm: 7
+  preprint: 0
+  actions: OPES_METAD MOVINGRESTRAINT BF_CHEBYSHEV HISTOGRAM METAD REWEIGHT_METAD BIASVALUE CONTACT_MATRIX MORE_THAN COORDINATIONNUMBER PRINT UNITS ANN VES_LINEAR_EXPANSION RESTRAINT DUMPGRID GROUP SUM CUSTOM COMBINE ONES TD_WELLTEMPERED DISTANCE OPT_AVERAGED_SGD LOAD MEAN CONVERT_TO_FES MATRIX_VECTOR_PRODUCT UPPER_WALLS FLUSH REWEIGHT_BIAS CONSTANT
+  modules: ves annfunc symfunc core function bias generic setup colvar adjmat gridtools matrixtools opes
+  time: 81.60505904299998
+- id: '21.004'
+  name: 'Machine Learning and Enhanced Sampling Simulations for Computing the Potential of Mean Force and Standard Binding Free Energy'
+  shortname: 'Machine Learnin...'
+  category: bio
+  keywords: machine learning, well-tempered metadynamics, path collective variable, potential of mean force, standard binding free energy calculations, host-guest, protein-ligand unbinding
+  shortkeywords: machine learning, well-te...
+  contributor: Dorothea Gobbo
+  doi: 10.1021/acs.jctc.1c00177
+  path: eggs/21/004/
+  reference: 'M. Bertazzo, D. Gobbo, S. Decherchi, A. Cavalli, Machine Learning and Enhanced Sampling Simulations for Computing the Potential of Mean Force and Standard Binding Free Energy. Journal of Chemical Theory and Computation. 17, 5287–5300 (2021)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jctc.1c00177'
+  ninputs: 2
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: RESTART WHOLEMOLECULES UPPER_WALLS PATHMSD METAD LOWER_WALLS PRINT
+  modules: colvar bias setup generic
+  time: 22.016852467000035
+- id: '20.017'
+  name: 'FISST'
+  shortname: 'FISST'
+  category: methods
+  keywords: FISST, force, peptide, sampling, tempering
+  shortkeywords: FISST, force, peptide, sa...
+  contributor: Glen Hocky
+  doi: 10.1063/5.0009280
+  path: eggs/20/017/
+  reference: 'M. J. Hartmann, Y. Singh, E. Vanden-Eijnden, G. M. Hocky, Infinite switch simulated tempering in force (FISST). The Journal of Chemical Physics. 152 (2020)'
+  ref_url: 'http://dx.doi.org/10.1063/5.0009280'
+  ninputs: 4
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: MATHEVAL GROUP BIASVALUE FISST PRINT DISTANCE UNITS GYRATION ENERGY RESTRAINT
+  modules: generic function bias colvar setup core fisst
+  time: 23.490715323999893
+- id: '20.014'
+  name: 'amyloid beta small molecule interaction'
+  shortname: 'amyloid beta sm...'
+  category: bio
+  keywords: intrinsically disordered proteins, disordered proteins, IDPs, fuzzy binding, small molecule, drugs, entropy, binding, Alzheimer's disease, amyloid beta
+  shortkeywords: intrinsically disordered ...
+  contributor: Gabriella Heller
+  doi: 10.1126/sciadv.abb5924
+  path: eggs/20/014/
+  reference: 'G. T. Heller, F. A. Aprile, T. C. T. Michaels, R. Limbocker, M. Perni, F. S. Ruggeri, B. Mannini, T. Löhr, M. Bonomi, C. Camilloni, A. De Simone, I. C. Felli, R. Pierattelli, T. P. J. Knowles, C. M. Dobson, M. Vendruscolo, Small-molecule sequestration of amyloid-β as a drug discovery strategy for Alzheimer’s disease. Science Advances. 6 (2020)'
+  ref_url: 'http://dx.doi.org/10.1126/sciadv.abb5924'
+  ninputs: 2
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: INCLUDE WHOLEMOLECULES CS2BACKBONE ANTIBETARMSD PBMETAD TORSION COORDINATION PRINT ENDPLUMED MOLINFO PARABETARMSD GROUP COMBINE STATS ENSEMBLE GYRATION DIHCOR FLUSH ALPHARMSD METAINFERENCE
+  modules: secondarystructure isdb generic colvar bias function multicolvar core
+  time: 16.21315425900002
+- id: '20.008'
+  name: 'Simulating solvation and acidity in complex mixtures with first-principles accuracy. The case of CH3SO3H and H2O2 in phenol'
+  shortname: 'Simulating solv...'
+  category: chemistry
+  keywords: proton trasfer, metadynamics
+  shortkeywords: proton trasfer, metadynam...
+  contributor: Kevin Rossi
+  doi: 10.1021/acs.jctc.0c00362
+  path: eggs/20/008/
+  reference: 'K. Rossi, V. Jurásková, R. Wischert, L. Garel, C. Corminbœuf, M. Ceriotti, Simulating Solvation and Acidity in Complex Mixtures with First-Principles Accuracy: The Case of CH3SO3H and H2O2 in Phenol. Journal of Chemical Theory and Computation. 16, 5139–5149 (2020)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jctc.0c00362'
+  ninputs: 1
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: GROUP SUM COORDINATION CENTER PRINT CUSTOM METAD DISTANCE UNITS DISTANCES
+  modules: vatom generic function colvar bias setup multicolvar core
+  time: 7.961260384999832
+- id: '20.002'
+  name: 'Exploring conformational dynamics of the extracellular Venus flytrap domain of the GABAB receptor, a path-metadynamics study'
+  shortname: 'Exploring confo...'
+  category: bio
+  keywords: Metadynamics, path CVs
+  shortkeywords: Metadynamics, path CVs
+  contributor: Riccardo Ocello
+  doi: 10.1021/acs.jcim.0c00163
+  path: eggs/20/002/
+  reference: 'L. S. M. Evenseth, R. Ocello, M. Gabrielsen, M. Masetti, M. Recanatini, I. Sylte, A. Cavalli, Exploring Conformational Dynamics of the Extracellular Venus flytrap Domain of the GABAB Receptor: A Path-Metadynamics Study. Journal of Chemical Information and Modeling. 60, 2294–2303 (2020)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jcim.0c00163'
+  ninputs: 1
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: RESTART GROUP WHOLEMOLECULES UPPER_WALLS PATHMSD METAD PRINT MOLINFO
+  modules: setup colvar bias generic core
+  time: 7.017436578999877
+- id: '19.082'
+  name: 'Ammonia Borane Dehydrogenation'
+  shortname: 'Ammonia Borane ...'
+  category: chemistry
+  keywords: metadynamics, reaction discovery, hydrogen production, chemistry
+  shortkeywords: metadynamics, reaction di...
+  contributor: Valerio Rizzi
+  doi: 10.1002/anie.201900134
+  path: eggs/19/082/
+  reference: 'V. Rizzi, D. Polino, E. Sicilia, N. Russo, M. Parrinello, The Onset of Dehydrogenation in Solid Ammonia Borane: An Ab Initio Metadynamics Study. Angewandte Chemie International Edition. 58, 3976–3980 (2019)'
+  ref_url: 'http://dx.doi.org/10.1002/anie.201900134'
+  ninputs: 11
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: RESTART MEAN CONTACT_MATRIX GROUP MATRIX_VECTOR_PRODUCT COORDINATIONNUMBER SUM FLUSH PRINT CUSTOM METAD ENDPLUMED ONES COMBINE EXTERNAL UNITS
+  modules: symfunc function setup generic bias adjmat matrixtools core
+  time: 82.27241692300004
+- id: '19.081'
+  name: 'Calculation of phase diagrams in the multithermal-multibaric ensemble'
+  shortname: 'Calculation of ...'
+  category: methods
+  keywords: VES, variationally enhanced sampling, multithermal-multibaric, energy, Wang Landau, RefCV, kernel, bcc, fcc, sodium, aluminum
+  shortkeywords: VES, variationally enhanc...
+  contributor: Pablo Piaggi
+  doi: 10.1063/1.5102104
+  path: eggs/19/081/
+  reference: 'P. M. Piaggi, M. Parrinello, Calculation of phase diagrams in the multithermal-multibaric ensemble. The Journal of Chemical Physics. 150 (2019)'
+  ref_url: 'http://dx.doi.org/10.1063/1.5102104'
+  ninputs: 18
+  nfail: 14
+  nfailm: 16
+  preprint: 0
+  actions: HISTOGRAM Q6 RESTART REWEIGHT_TEMP_PRESS PRINT READ VES_LINEAR_EXPANSION CELL MATHEVAL DUMPGRID COMBINE TD_WELLTEMPERED OPT_AVERAGED_SGD LOAD ENERGY CONVERT_TO_FES UPPER_WALLS BF_LEGENDRE LOWER_WALLS VOLUME REWEIGHT_BIAS TD_MULTITHERMAL_MULTIBARIC OPT_DUMMY
+  modules: ves symfunc generic setup bias colvar function gridtools
+  time: 79.76724749100003
+- id: '19.061'
+  name: 'Diffusion in porous materials'
+  shortname: 'Diffusion in po...'
+  category: materials
+  keywords: metadynamics, porous materials, diffusion
+  shortkeywords: metadynamics, porous mate...
+  contributor: Kim E. Jelfs
+  doi: 10.1021/acs.jpcc.9b05953
+  path: eggs/19/061/
+  reference: 'E. Jackson, M. Miklitz, Q. Song, G. A. Tribello, K. E. Jelfs, Computational Evaluation of the Diffusion Mechanisms for C8 Aromatics in Porous Organic Cages. The Journal of Physical Chemistry C. 123, 21011–21021 (2019)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jpcc.9b05953'
+  ninputs: 2
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: RESTART GROUP COM UPPER_WALLS CENTER PRINT LOWER_WALLS METAD DISTANCE
+  modules: vatom generic setup bias colvar core
+  time: 12.29632856299986
+- id: '19.055'
+  name: 'Flying Gaussian method'
+  shortname: 'Flying Gaussian...'
+  category: methods
+  keywords: flying Gaussians, alanine dipeptide, peptide bond, Met-enkephalin
+  shortkeywords: flying Gaussians, alanine...
+  contributor: Vojtech Spiwok
+  doi: 10.1021/acs.jctc.6b00551
+  path: eggs/19/055/
+  reference: 'Z. Šućur, V. Spiwok, Sampling Enhancement and Free Energy Prediction by the Flying Gaussian Method. Journal of Chemical Theory and Computation. 12, 4644–4650 (2016)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jctc.6b00551'
+  ninputs: 9
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: TORSION MATHEVAL PRINT METAD COMBINE DISTANCE
+  modules: generic bias function colvar
+  time: 54.311433967000085
+- id: '19.050'
+  name: 'Using intrinsic surface to calculate the free energy change when nanoparticles adsorb on membranes'
+  shortname: 'Using intrinsic...'
+  category: chemistry
+  keywords: metadynamics, membranes, Willard Chandler surface
+  shortkeywords: metadynamics, membranes, ...
+  contributor: Gareth Tribello
+  doi: 10.1021/acs.jpcb.8b03661
+  path: eggs/19/050/
+  reference: 'J. Klug, C. Triguero, M. G. Del Pópolo, G. A. Tribello, Using Intrinsic Surfaces To Calculate the Free-Energy Change When Nanoparticles Adsorb on Membranes. The Journal of Physical Chemistry B. 122, 6417–6422 (2018)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jpcb.8b03661'
+  ninputs: 3
+  nfail: 0
+  nfailm: 1
+  preprint: 0
+  actions: DISTANCE_FROM_CONTOUR RESTART CONVERT_TO_FES HISTOGRAM DUMPGRID UPPER_WALLS PRINT METAD COMBINE REWEIGHT_BIAS READ
+  modules: generic setup bias function contour gridtools
+  time: 16.857769454999925
+- id: '19.049'
+  name: 'Determining the sizes of solid/liquid clusters in MD trajectories of nucleation'
+  shortname: 'Determining the...'
+  category: methods
+  keywords: nucleation, metadynamics, clustering, Steinhardt order parameters
+  shortkeywords: nucleation, metadynamics,...
+  contributor: Gareth Tribello
+  doi: 10.1021/acs.jctc.6b01073
+  path: eggs/19/049/
+  reference: 'G. A. Tribello, F. Giberti, G. C. Sosso, M. Salvalaglio, M. Parrinello, Analyzing and Driving Cluster Formation in Atomistic Simulations. Journal of Chemical Theory and Computation. 13, 1317–1327 (2017)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jctc.6b01073'
+  ninputs: 3
+  nfail: 2
+  nfailm: 3
+  preprint: 0
+  actions: CLUSTER_DISTRIBUTION OUTPUT_CLUSTER DFSCLUSTERING CONTACT_MATRIX Q6 MORE_THAN MATRIX_VECTOR_PRODUCT COORDINATIONNUMBER SMAC CLUSTER_PROPERTIES PRINT CUSTOM METAD CLUSTER_NATOMS ONES OUTER_PRODUCT LOCAL_Q6 DISTANCES
+  modules: symfunc function generic bias multicolvar adjmat matrixtools clusters
+  time: 12.851620135000076
+- id: '19.048'
+  name: 'Understanding Ligand Binding Selectivity in a Prototypical GPCR Family'
+  shortname: 'Understanding L...'
+  category: bio
+  keywords: metadynamics, Parallel-tempering metadynamics, GPCRs, ligand binding
+  shortkeywords: metadynamics, Parallel-te...
+  contributor: Francesco Gervasio
+  doi: 10.1021/acs.jcim.9b00298
+  path: eggs/19/048/
+  reference: 'G. Mattedi, F. Deflorian, J. S. Mason, C. de Graaf, F. L. Gervasio, Understanding Ligand Binding Selectivity in a Prototypical GPCR Family. Journal of Chemical Information and Modeling. 59, 2830–2836 (2019)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jcim.9b00298'
+  ninputs: 4
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: MATHEVAL WHOLEMOLECULES COM UPPER_WALLS PRINT METAD LOWER_WALLS DISTANCE CONSTANT BIASVALUE
+  modules: vatom function bias colvar generic
+  time: 24.095156694000025
+- id: '19.040'
+  name: 'Optimal Metric for Path Collective Variables'
+  shortname: 'Optimal Metric ...'
+  category: bio
+  keywords: metadynamics, path collective variables, sgoop, alanine tripeptide, conformational changes, optimal path
+  shortkeywords: metadynamics, path collec...
+  contributor: Francesco Luigi Gervasio
+  doi: 10.1021/acs.jctc.8b00563
+  path: eggs/19/040/
+  reference: 'L. Hovan, F. Comitani, F. L. Gervasio, Defining an Optimal Metric for the Path Collective Variables. Journal of Chemical Theory and Computation. 15, 25–32 (2018)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jctc.8b00563'
+  ninputs: 4
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: TORSION MATHEVAL PRINT METAD ENDPLUMED
+  modules: generic bias function colvar
+  time: 23.322282201000007
+- id: '19.039'
+  name: 'Funnel Metadynamics'
+  shortname: 'Funnel Metadyna...'
+  category: bio
+  keywords: funnel-metadynamics, absolute binding free energy, ligand-receptor complexes
+  shortkeywords: funnel-metadynamics, abso...
+  contributor: Vittorio Limongelli
+  doi: 10.1073/pnas.1303186110
+  path: eggs/19/039/
+  reference: 'V. Limongelli, M. Bonomi, M. Parrinello, Funnel metadynamics as accurate binding free-energy method. Proceedings of the National Academy of Sciences. 110, 6358–6363 (2013)'
+  ref_url: 'http://dx.doi.org/10.1073/pnas.1303186110'
+  ninputs: 1
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: RMSD WHOLEMOLECULES COM UPPER_WALLS FUNNEL_PS METAD LOWER_WALLS PRINT DISTANCE FUNNEL
+  modules: vatom funnel bias generic colvar
+  time: 10.475437730000067
+- id: '19.018'
+  name: 'Excited state FEP/Metadynamics simulations'
+  shortname: 'Excited state F...'
+  category: chemistry
+  keywords: metadynamics, FEP, excited states, conjugated polymers, torsional potential
+  shortkeywords: metadynamics, FEP, excite...
+  contributor: Adriana Pietropaolo
+  doi: 10.1021/acs.jctc.8b00949
+  path: eggs/19/018/
+  reference: 'C. Cozza, M. Bonomi, A. Pietropaolo, A Versatile Computational Strategy To Characterize the Free-Energy Landscape of Excited States in Oligofluorenes. Journal of Chemical Theory and Computation. 14, 5441–5445 (2018)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jctc.8b00949'
+  ninputs: 1
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: TORSION MATHEVAL WHOLEMOLECULES PRINT METAD CONSTANT BIASVALUE
+  modules: generic bias function colvar
+  time: 6.409570042000041
+- id: '19.010'
+  name: 'Multi-domain protein dynamics'
+  shortname: 'Multi-domain pr...'
+  category: bio
+  keywords: metainference, NMR, protein dynamics
+  shortkeywords: metainference, NMR, prote...
+  contributor: Carlo Camilloni
+  doi: 10.1016/j.jmb.2018.10.024
+  path: eggs/19/010/
+  reference: 'B. Weber, M. Hora, P. Kazman, C. Göbl, C. Camilloni, B. Reif, J. Buchner, The Antibody Light-Chain Linker Regulates Domain Orientation and Amyloidogenicity. Journal of Molecular Biology. 430, 4925–4940 (2018)'
+  ref_url: 'http://dx.doi.org/10.1016/j.jmb.2018.10.024'
+  ninputs: 4
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: WHOLEMOLECULES PBMETAD TORSION RDC PRINT ENDPLUMED MOLINFO RESTRAINT GROUP SUM CENTER CUSTOM COMBINE STATS DISTANCE ENSEMBLE DIHEDRAL_CORRELATION DIHCOR UPPER_WALLS DHENERGY ALPHABETA METAINFERENCE CONSTANT
+  modules: isdb vatom generic colvar bias function multicolvar core
+  time: 25.746799219999957
+- id: '19.001'
+  name: 'RNA SHAPE'
+  shortname: 'RNA SHAPE'
+  category: bio
+  keywords: metadynamics, RNA, ligand binding
+  shortkeywords: metadynamics, RNA, ligand...
+  contributor: Giovanni Bussi
+  doi: 10.1021/acs.jpclett.7b02921
+  path: eggs/19/001/
+  reference: 'V. Mlýnský, G. Bussi, Molecular Dynamics Simulations Reveal an Interplay between SHAPE Reagent Binding and RNA Flexibility. The Journal of Physical Chemistry Letters. 9, 313–318 (2018)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jpclett.7b02921'
+  ninputs: 1
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: RANDOM_EXCHANGES INCLUDE UPPER_WALLS GROUP FLUSH CENTER LOWEST LOWER_WALLS METAD COMBINE PRINT ANGLE DISTANCES ERMSD DISTANCE MOLINFO
+  modules: vatom function generic bias colvar multicolvar core
+  time: 8.870417754000073

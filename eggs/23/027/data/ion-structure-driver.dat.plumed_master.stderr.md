@@ -1,0 +1,29 @@
+**Project ID:** [plumID:23.027]({{ '/' | absolute_url }}eggs/23/027/)  
+Stderr for source:  ion-structure-driver.dat   
+Download: [zipped raw stdout](ion-structure-driver.dat.plumed_master.stdout.txt.zip) - [zipped raw stderr](ion-structure-driver.dat.plumed_master.stderr.txt.zip) 
+{% raw %}
+<pre>
+#! Only the first 1000 rows of the error file are shown below
+#! To inspect the full error file, please download the zipped raw stderr file above
+terminate called after throwing an instance of 'PLMD::Plumed::ExceptionError'
+what():
+(core/Action.cpp:309) void PLMD::Action::error(const string&) const
+ERROR in input to action DFSCLUSTERING with label dfs0l : keyword ARG is compulsory for this action
+[fv-az1215-275:05582] *** Process received signal ***
+[fv-az1215-275:05582] Signal: Aborted (6)
+[fv-az1215-275:05582] Signal code:  (-6)
+[fv-az1215-275:05582] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x42520)[0x7f2db3842520]
+[fv-az1215-275:05582] [ 1] /lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x12c)[0x7f2db38969fc]
+[fv-az1215-275:05582] [ 2] /lib/x86_64-linux-gnu/libc.so.6(raise+0x16)[0x7f2db3842476]
+[fv-az1215-275:05582] [ 3] /lib/x86_64-linux-gnu/libc.so.6(abort+0xd3)[0x7f2db38287f3]
+[fv-az1215-275:05582] [ 4] /lib/x86_64-linux-gnu/libstdc++.so.6(+0xa2b9e)[0x7f2db3ca2b9e]
+[fv-az1215-275:05582] [ 5] /lib/x86_64-linux-gnu/libstdc++.so.6(+0xae20c)[0x7f2db3cae20c]
+[fv-az1215-275:05582] [ 6] /lib/x86_64-linux-gnu/libstdc++.so.6(+0xae277)[0x7f2db3cae277]
+[fv-az1215-275:05582] [ 7] /lib/x86_64-linux-gnu/libstdc++.so.6(__cxa_rethrow+0x4b)[0x7f2db3cae52b]
+[fv-az1215-275:05582] [ 8] plumed_master(+0x14254)[0x5594ab5e5254]
+[fv-az1215-275:05582] [ 9] /lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x7f2db3829d90]
+[fv-az1215-275:05582] [10] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7f2db3829e40]
+[fv-az1215-275:05582] [11] plumed_master(+0x14eb5)[0x5594ab5e5eb5]
+[fv-az1215-275:05582] *** End of error message ***
+</pre>
+{% endraw %}
