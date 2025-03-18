@@ -1,0 +1,19 @@
+# file containing egg database.
+- id: '25.005'
+  name: 'Mechanism of Nanocluster Formation from Machine-Learned Potential-based Simulations'
+  shortname: 'Mechanism of Na...'
+  category: chemistry
+  keywords: WT-metadynamics, metal nanoclusters, nucleation, neural network potential, deepMD
+  shortkeywords: WT-metadynamics, metal na...
+  contributor: Vikas Tiwari, Tarak Karmakar
+  doi: 10.26434/chemrxiv-2025-rkv0g
+  path: eggs/25/005/
+  reference: 'V. Tiwari, Dr. T. Karmakar, Understanding the Mechanism of Nanocluster Formation from Machine-Learned Potential-based Simulations (2025)'
+  ref_url: 'http://dx.doi.org/10.26434/chemrxiv-2025-rkv0g'
+  ninputs: 2
+  nfail: 0
+  nfailm: 0
+  preprint: 1
+  actions: FLUSH UPPER_WALLS METAD ANGLE MATRIX_VECTOR_PRODUCT FIXEDATOM LOWEST COMBINE GROUP COORDINATION DISTANCES UNITS CONTACT_MATRIX MEAN SUM ONES LOWER_WALLS COM COORDINATIONNUMBER RESTRAINT CUSTOM PRINT DISTANCE
+  modules: generic setup adjmat matrixtools colvar bias vatom multicolvar symfunc function core
+  time: 2086.673456361
