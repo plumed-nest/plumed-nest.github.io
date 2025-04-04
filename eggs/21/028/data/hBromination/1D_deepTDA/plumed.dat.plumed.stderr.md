@@ -1,0 +1,43 @@
+**Project ID:** [plumID:21.028]({{ '/' | absolute_url }}eggs/21/028/)  
+Stderr for source:  hBromination/1D_deepTDA/plumed.dat   
+Download: [zipped raw stdout](plumed.dat.plumed.stdout.txt.zip) - [zipped raw stderr](plumed.dat.plumed.stderr.txt.zip) 
+{% raw %}
+<pre>
+#! Only the first 1000 rows of the error file are shown below
+#! To inspect the full error file, please download the zipped raw stderr file above
+../Contacts.YwkYIK.cpp: In constructor ‘PLMD::colvar::Contacts::Contacts(const PLMD::ActionOptions&)’:
+../Contacts.YwkYIK.cpp:93:26: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+93 |   for(unsigned int i=0; i<num_atomsa; i++)
+|                         ~^~~~~~~~~~~
+../Contacts.YwkYIK.cpp:99:26: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+99 |   for(unsigned int i=0; i<num_atomsb; i++)
+|                         ~^~~~~~~~~~~
+../Contacts.YwkYIK.cpp:124:25: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+124 |   for(unsigned int i=0;i<num_atomsa;++i){
+|                        ~^~~~~~~~~~~
+../Contacts.YwkYIK.cpp:129:25: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+129 |   for(unsigned int i=0;i<num_atomsb;++i){
+|                        ~^~~~~~~~~~~
+terminate called after throwing an instance of 'PLMD::Plumed::ExceptionError'
+what():
+(tools/Keywords.cpp:263) void PLMD::Keywords::addFlag(const std::string&, bool, const std::string&)
++++ assertion failed: !def
+the second argument to addFlag must be false COMPONENTS
+[fv-az805-507:08099] *** Process received signal ***
+[fv-az805-507:08099] Signal: Aborted (6)
+[fv-az805-507:08099] Signal code:  (-6)
+[fv-az805-507:08099] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7f4708a45330]
+[fv-az805-507:08099] [ 1] /lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11c)[0x7f4708a9eb2c]
+[fv-az805-507:08099] [ 2] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0x1e)[0x7f4708a4527e]
+[fv-az805-507:08099] [ 3] /lib/x86_64-linux-gnu/libc.so.6(abort+0xdf)[0x7f4708a288ff]
+[fv-az805-507:08099] [ 4] /lib/x86_64-linux-gnu/libstdc++.so.6(+0xa5ff5)[0x7f4708ea5ff5]
+[fv-az805-507:08099] [ 5] /lib/x86_64-linux-gnu/libstdc++.so.6(+0xbb0da)[0x7f4708ebb0da]
+[fv-az805-507:08099] [ 6] /lib/x86_64-linux-gnu/libstdc++.so.6(_ZSt10unexpectedv+0x0)[0x7f4708ea5a55]
+[fv-az805-507:08099] [ 7] /lib/x86_64-linux-gnu/libstdc++.so.6(+0xa5a6f)[0x7f4708ea5a6f]
+[fv-az805-507:08099] [ 8] plumed(+0x146dd)[0x56261caaa6dd]
+[fv-az805-507:08099] [ 9] /lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca)[0x7f4708a2a1ca]
+[fv-az805-507:08099] [10] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b)[0x7f4708a2a28b]
+[fv-az805-507:08099] [11] plumed(+0x15365)[0x56261caab365]
+[fv-az805-507:08099] *** End of error message ***
+</pre>
+{% endraw %}
