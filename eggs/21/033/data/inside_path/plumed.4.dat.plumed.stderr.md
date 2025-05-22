@@ -1,0 +1,76 @@
+**Project ID:** [plumID:21.033]({{ '/' | absolute_url }}eggs/21/033/)  
+Stderr for source:  inside_path/plumed.4.dat   
+Download: [zipped raw stdout](plumed.4.dat.plumed.stdout.txt.zip) - [zipped raw stderr](plumed.4.dat.plumed.stderr.txt.zip) 
+{% raw %}
+<pre>
+#! Only the first 1000 rows of the error file are shown below
+#! To inspect the full error file, please download the zipped raw stderr file above
+WARNING: using a legacy ActionRegister.h include path, please use <<#include "core/ActionRegister.h">>
+WARNING: "core/Atoms.h" does not exist anymore in  version >=2.10, you should change your code.
+../PathCV.vsmWVw.cpp: In static member function ‘static void PLMD::function::PathCV::registerKeywords(PLMD::Keywords&)’:
+../PathCV.vsmWVw.cpp:198:3: error: ‘componentsAreNotOptional’ was not declared in this scope
+198 |   componentsAreNotOptional(keys);
+|   ^~~~~~~~~~~~~~~~~~~~~~~~
+../PathCV.vsmWVw.cpp: In destructor ‘virtual PLMD::function::PathCV::~PathCV()’:
+../PathCV.vsmWVw.cpp:208:16: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+208 |   for(int i=0;i<mw_n_;++i){
+|               ~^~~~~~
+../PathCV.vsmWVw.cpp: In constructor ‘PLMD::function::PathCV::PathCV(const PLMD::ActionOptions&)’:
+../PathCV.vsmWVw.cpp:236:16: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+236 |   for(int i=0;i<mw_n_;++i){
+|               ~^~~~~~
+../PathCV.vsmWVw.cpp:259:11: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+259 |       if(i==mw_id_) ifiles[i]->close();
+|          ~^~~~~~~~
+../PathCV.vsmWVw.cpp: In member function ‘void PLMD::function::PathCV::generatePath()’:
+../PathCV.vsmWVw.cpp:483:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+483 |     for(int inode=0;inode<nnodes;inode++){
+|                     ~~~~~^~~~~~~
+../PathCV.vsmWVw.cpp: In member function ‘void PLMD::function::PathCV::readMultipleWalkers()’:
+../PathCV.vsmWVw.cpp:941:16: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+941 |   for(int i=0;i<mw_n_;++i){
+|               ~^~~~~~
+../PathCV.vsmWVw.cpp:942:9: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+942 |     if(i==mw_id_) continue;
+|        ~^~~~~~~~
+../PathCV.vsmWVw.cpp:957:5: error: invalid use of incomplete type ‘class PLMD::Communicator’
+957 |     comm.Barrier();
+|     ^~~~
+In file included from /home/runner/opt/include/plumed/function/../core/../tools/OFile.h:25,
+from /home/runner/opt/include/plumed/function/../core/../tools/Log.h:25,
+from /home/runner/opt/include/plumed/function/../core/Action.h:30,
+from /home/runner/opt/include/plumed/function/../core/ActionWithValue.h:25,
+from /home/runner/opt/include/plumed/function/Function.h:25,
+from ../PathCV.vsmWVw.cpp:22:
+/home/runner/opt/include/plumed/function/../core/../tools/FileBase.h:29:7: note: forward declaration of ‘class PLMD::Communicator’
+29 | class Communicator;
+|       ^~~~~~~~~~~~
+../PathCV.vsmWVw.cpp:958:5: error: invalid use of incomplete type ‘class PLMD::Communicator’
+958 |     multi_sim_comm.Barrier();
+|     ^~~~~~~~~~~~~~
+/home/runner/opt/include/plumed/function/../core/../tools/FileBase.h:29:7: note: forward declaration of ‘class PLMD::Communicator’
+29 | class Communicator;
+|       ^~~~~~~~~~~~
+terminate called after throwing an instance of 'PLMD::Plumed::ExceptionError'
+what():
+(core/PlumedMain.cpp:1502) void PLMD::PlumedMain::load(const std::string&)
+An error happened while executing command env PLUMED_ROOT='/home/runner/opt/lib/plumed' PLUMED_VERSION='2.10b' PLUMED_HTMLDIR='/home/runner/opt/share/doc/plumed' PLUMED_INCLUDEDIR='/home/runner/opt/include' PLUMED_PROGRAM_NAME='plumed' PLUMED_IS_INSTALLED='yes' "/home/runner/opt/lib/plumed"/scripts/mklib.sh -n -o ./../PathCV.2.10b.so ../PathCV.cpp
+
+[pkrvmf6wy0o8zjz:36794] *** Process received signal ***
+[pkrvmf6wy0o8zjz:36794] Signal: Aborted (6)
+[pkrvmf6wy0o8zjz:36794] Signal code:  (-6)
+[pkrvmf6wy0o8zjz:36794] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7f3f10a45330]
+[pkrvmf6wy0o8zjz:36794] [ 1] /lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11c)[0x7f3f10a9eb2c]
+[pkrvmf6wy0o8zjz:36794] [ 2] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0x1e)[0x7f3f10a4527e]
+[pkrvmf6wy0o8zjz:36794] [ 3] /lib/x86_64-linux-gnu/libc.so.6(abort+0xdf)[0x7f3f10a288ff]
+[pkrvmf6wy0o8zjz:36794] [ 4] /lib/x86_64-linux-gnu/libstdc++.so.6(+0xa5ff5)[0x7f3f10ea5ff5]
+[pkrvmf6wy0o8zjz:36794] [ 5] /lib/x86_64-linux-gnu/libstdc++.so.6(+0xbb0da)[0x7f3f10ebb0da]
+[pkrvmf6wy0o8zjz:36794] [ 6] /lib/x86_64-linux-gnu/libstdc++.so.6(_ZSt10unexpectedv+0x0)[0x7f3f10ea5a55]
+[pkrvmf6wy0o8zjz:36794] [ 7] /lib/x86_64-linux-gnu/libstdc++.so.6(+0xa5a6f)[0x7f3f10ea5a6f]
+[pkrvmf6wy0o8zjz:36794] [ 8] plumed(+0x146dd)[0x55f94d0716dd]
+[pkrvmf6wy0o8zjz:36794] [ 9] /lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca)[0x7f3f10a2a1ca]
+[pkrvmf6wy0o8zjz:36794] [10] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b)[0x7f3f10a2a28b]
+[pkrvmf6wy0o8zjz:36794] [11] plumed(+0x15365)[0x55f94d072365]
+[pkrvmf6wy0o8zjz:36794] *** End of error message ***
+</pre>
+{% endraw %}
