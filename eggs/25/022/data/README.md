@@ -1,3 +1,4 @@
+````markdown
 # Imidazole Diffusion in SALEM-2 MOF
 
 This repository contains data, analysis tools, templates, and figures from our study of imidazole diffusion through 4MR and 6MR windows in SALEM-2 MOF using OPES-enhanced machine learning potentials (DeePMD).
@@ -35,3 +36,4 @@ If you use any data, code, or resources from this repository, please cite our wo
 ## Contact
 
 For questions regarding the data or methodology, please contact the corresponding authors or open an issue in this repository and tag @skethirajan.
+````
