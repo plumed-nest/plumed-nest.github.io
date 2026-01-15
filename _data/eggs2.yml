@@ -1,0 +1,199 @@
+# file containing egg database.
+- id: '25.030'
+  name: 'Committor Regularization'
+  shortname: 'Committor Regul...'
+  category: methods
+  keywords: metadynamics, enhanced sampling, mlcvs, committor, machine learning
+  shortkeywords: metadynamics, enhanced sa...
+  contributor: Florian Dietrich
+  doi: 10.26434/chemrxiv-2025-8gqqj
+  path: eggs/25/030/
+  reference: 'F. Dietrich, M. Bellucci, M. Salvalaglio, Committor-Regularized Learning of Differentiable Collective Variables from Non-Differentiable Structural Descriptors (2025)'
+  ref_url: 'http://dx.doi.org/10.26434/chemrxiv-2025-8gqqj'
+  ninputs: 2
+  nfail: 2
+  nfailm: 2
+  preprint: 1
+  actions: METAD PRINT MOVINGRESTRAINT UNITS
+  modules: setup generic bias
+  time: 11.438444516000004
+- id: '25.017'
+  name: 'Product-stabilized filamentation by human glutamine synthetase allosterically tunes metabolic activity'
+  shortname: 'Product-stabili...'
+  category: bio
+  keywords: EMMIVox, cryo-EM, allostery, decamer, filament, ensemble refinement, glutamine synthetase
+  shortkeywords: EMMIVox, cryo-EM, alloste...
+  contributor: Samuel Hoff
+  doi: unpublished
+  path: eggs/25/017/
+  reference: 'unpublished'
+  ref_url: ''
+  ninputs: 3
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: EMMIVOX WHOLEMOLECULES GROUP PRINT BIASVALUE MOLINFO
+  modules: generic core isdb bias
+  time: 68.53917693100004
+- id: '25.007'
+  name: 'Shaping the glycan landscape. Hidden relationships between linkage and ring distortion induced by carbohydrate-active enzmyes'
+  shortname: 'Shaping the gly...'
+  category: bio
+  keywords: REST-RECT, REST2, glycan, enzyme, CAZyme, steered
+  shortkeywords: REST-RECT, REST2, glycan,...
+  contributor: Isabell Grothaus
+  doi: unpublished
+  path: eggs/25/007/
+  reference: 'unpublished'
+  ref_url: ''
+  ninputs: 5
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: RESTART DISTANCE RESTRAINT PRINT METAD PUCKERING MOVINGRESTRAINT MOLINFO TORSION
+  modules: setup generic colvar bias
+  time: 33.065562198000066
+- id: '25.005'
+  name: 'Mechanism of Nanocluster Formation from Machine-Learned Potential-based Simulations'
+  shortname: 'Mechanism of Na...'
+  category: chemistry
+  keywords: WT-metadynamics, metal nanoclusters, nucleation, neural network potential, deepMD
+  shortkeywords: WT-metadynamics, metal na...
+  contributor: Vikas Tiwari, Tarak Karmakar
+  doi: 10.1021/acs.nanolett.5c01340
+  path: eggs/25/005/
+  reference: 'V. Tiwari, T. Karmakar, Atomistic Details of Nanocluster Formation from Machine-Learned-Potential-Based Simulations. Nano Letters. 25, 5940–5946 (2025)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.nanolett.5c01340'
+  ninputs: 2
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: FIXEDATOM COMBINE DISTANCE RESTRAINT GROUP METAD PRINT UNITS ANGLE UPPER_WALLS COORDINATION COM DISTANCES LOWER_WALLS COORDINATIONNUMBER FLUSH
+  modules: vatom core function symfunc bias generic setup colvar multicolvar
+  time: 1185.166878754
+- id: '24.019'
+  name: 'Enhanced Sampling of Biomolecular Slow Conformational Transitions Using Adaptive Sampling and Machine Learning'
+  shortname: 'Enhanced Sampli...'
+  category: bio
+  keywords: OPES, machine learning, protein folding, adaptive sampling
+  shortkeywords: OPES, machine learning, p...
+  contributor: Mingyuan Zhang
+  doi: 10.1021/acs.jctc.4c00764
+  path: eggs/24/019/
+  reference: 'M. Zhang, H. Wu, Y. Wang, Enhanced Sampling of Biomolecular Slow Conformational Transitions Using Adaptive Sampling and Machine Learning. Journal of Chemical Theory and Computation. 20, 8569–8582 (2024)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jctc.4c00764'
+  ninputs: 20
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: CUSTOM COMBINE WHOLEMOLECULES DISTANCE GYRATION PRINT OPES_METAD ALPHARMSD COORDINATION MOLINFO TORSION
+  modules: function generic secondarystructure opes colvar
+  time: 175.86524046500017
+- id: '23.039'
+  name: 'Thermodynamically inspired machine-learned reaction coordinates for hydrophobic ligand dissociation'
+  shortname: 'Thermodynamical...'
+  category: chemistry
+  keywords: metadynamics, ligand dissociation
+  shortkeywords: metadynamics, ligand diss...
+  contributor: Eric Beyerle
+  doi: 10.1021/acs.jpcb.3c08304
+  path: eggs/23/039/
+  reference: 'E. R. Beyerle, P. Tiwary, Thermodynamically Optimized Machine-Learned Reaction Coordinates for Hydrophobic Ligand Dissociation. The Journal of Physical Chemistry B. 128, 755–767 (2024)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jpcb.3c08304'
+  ninputs: 2
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: FIXEDATOM COMBINE DISTANCE DUMPMASSCHARGE RESTRAINT METAD PRINT UPPER_WALLS CENTER MOLINFO
+  modules: vatom function bias generic colvar
+  time: 14.066229984000074
+- id: '23.024'
+  name: 'Permutationally Invariant Networks for Enhanced Sampling (PINES)'
+  shortname: 'Permutationally...'
+  category: methods
+  keywords: collective variables, enhanced sampling, data-driven, deep learning, permutational invariance, solvent
+  shortkeywords: collective variables, enh...
+  contributor: Nicholas Herringer
+  doi: 10.1021/acs.jctc.3c00923
+  path: eggs/23/024/
+  reference: 'N. S. M. Herringer, S. Dasetty, D. Gandhi, J. Lee, A. L. Ferguson, Permutationally Invariant Networks for Enhanced Sampling (PINES): Discovery of Multimolecular and Solvent-Inclusive Collective Variables. Journal of Chemical Theory and Computation. 20, 178–198 (2023)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jctc.3c00923'
+  ninputs: 3
+  nfail: 3
+  nfailm: 3
+  preprint: 0
+  actions: LOAD PRINT PBMETAD
+  modules: setup generic bias
+  time: 23.317560747000243
+- id: '22.004'
+  name: 'Discover, Sample and Refine. Exploring Chemistry with Enhanced Sampling Techniques'
+  shortname: 'Discover, Sampl...'
+  category: chemistry
+  keywords: reaction discovery, OPES, collective variables
+  shortkeywords: reaction discovery, OPES,...
+  contributor: Umberto Raucci
+  doi: 10.1021/acs.jpclett.1c03993
+  path: eggs/22/004/
+  reference: 'U. Raucci, V. Rizzi, M. Parrinello, Discover, Sample, and Refine: Exploring Chemistry with Enhanced Sampling Techniques. The Journal of Physical Chemistry Letters. 13, 1424–1430 (2022)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jpclett.1c03993'
+  ninputs: 4
+  nfail: 1
+  nfailm: 1
+  preprint: 0
+  actions: MATHEVAL CUSTOM DISTANCE GROUP PRINT OPES_METAD UNITS PYTORCH_MODEL UPPER_WALLS COM LOAD LOWER_WALLS COORDINATION OPES_METAD_EXPLORE
+  modules: pytorch vatom core function bias generic setup opes colvar
+  time: 30.841569958000036
+- id: '22.003'
+  name: 'Exploration vs Convergence Speed in Adaptive-bias Enhanced Sampling'
+  shortname: 'Exploration vs ...'
+  category: methods
+  keywords: opes, metadynamics, reweighting, alanine, muller
+  shortkeywords: opes, metadynamics, rewei...
+  contributor: Michele Invernizzi
+  doi: 10.1021/acs.jctc.2c00152
+  path: eggs/22/003/
+  reference: 'M. Invernizzi, M. Parrinello, Exploration vs Convergence Speed in Adaptive-Bias Enhanced Sampling. Journal of Chemical Theory and Computation. 18, 3988–3996 (2022)'
+  ref_url: 'http://dx.doi.org/10.1021/acs.jctc.2c00152'
+  ninputs: 10
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: CUSTOM OPES_EXPANDED PBMETAD PRINT OPES_METAD METAD ECV_MULTITHERMAL UNITS ECV_UMBRELLAS_FILE BIASVALUE UPPER_WALLS ENDPLUMED LOWER_WALLS ENERGY POSITION OPES_METAD_EXPLORE TORSION
+  modules: function bias generic setup opes colvar
+  time: 73.74369277300002
+- id: '20.025'
+  name: 'The role of water in host-guest interaction'
+  shortname: 'The role of wat...'
+  category: bio
+  keywords: ligand binding, water, opes, SAMPL5
+  shortkeywords: ligand binding, water, op...
+  contributor: Valerio Rizzi
+  doi: 10.1038/s41467-020-20310-0
+  path: eggs/20/025/
+  reference: 'V. Rizzi, L. Bonati, N. Ansari, M. Parrinello, The role of water in host-guest interaction. Nature Communications. 12 (2021)'
+  ref_url: 'http://dx.doi.org/10.1038/s41467-020-20310-0'
+  ninputs: 14
+  nfail: 1
+  nfailm: 0
+  preprint: 0
+  actions: FIT_TO_TEMPLATE MATHEVAL FIXEDATOM DISTANCE WHOLEMOLECULES GROUP PRINT OPES_METAD PYTORCH_MODEL ANGLE UPPER_WALLS ENDPLUMED ENERGY COORDINATION CENTER
+  modules: vatom pytorch core function bias generic opes colvar
+  time: 137.38230151200014
+- id: '19.082'
+  name: 'Ammonia Borane Dehydrogenation'
+  shortname: 'Ammonia Borane ...'
+  category: chemistry
+  keywords: metadynamics, reaction discovery, hydrogen production, chemistry
+  shortkeywords: metadynamics, reaction di...
+  contributor: Valerio Rizzi
+  doi: 10.1002/anie.201900134
+  path: eggs/19/082/
+  reference: 'V. Rizzi, D. Polino, E. Sicilia, N. Russo, M. Parrinello, The Onset of Dehydrogenation in Solid Ammonia Borane: An Ab Initio Metadynamics Study. Angewandte Chemie International Edition. 58, 3976–3980 (2019)'
+  ref_url: 'http://dx.doi.org/10.1002/anie.201900134'
+  ninputs: 11
+  nfail: 0
+  nfailm: 0
+  preprint: 0
+  actions: RESTART COMBINE GROUP PRINT METAD UNITS ENDPLUMED EXTERNAL COORDINATIONNUMBER FLUSH
+  modules: core function symfunc bias generic setup
+  time: 88.80227279699966

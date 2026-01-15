@@ -1,0 +1,29 @@
+**Project ID:** [plumID:19.071]({{ '/' | absolute_url }}eggs/19/071/)  
+Stderr for source:  MFI_paper_scripts/convegence_double_well_1D/WTmetaD_adapt/plumed_WTmetaD_adaptive.dat   
+Download: [zipped raw stdout](plumed_WTmetaD_adaptive.dat.plumed_master.stdout.txt.zip) - [zipped raw stderr](plumed_WTmetaD_adaptive.dat.plumed_master.stderr.txt.zip) 
+{% raw %}
+<pre>
+#! Only the first 1000 rows of the error file are shown below
+#! To inspect the full error file, please download the zipped raw stderr file above
+terminate called after throwing an instance of 'PLMD::Plumed::ExceptionError'
+what():
+(core/Action.cpp:372) void PLMD::Action::error(const std::string&) const
+ERROR in input to action METAD with label metad : When using ADAPTIVE Gaussians on a grid SIGMA_MIN must be specified
+[runnervmmtnos:39118] *** Process received signal ***
+[runnervmmtnos:39118] Signal: Aborted (6)
+[runnervmmtnos:39118] Signal code:  (-6)
+[runnervmmtnos:39118] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7faee4045330]
+[runnervmmtnos:39118] [ 1] /lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11c)[0x7faee409eb2c]
+[runnervmmtnos:39118] [ 2] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0x1e)[0x7faee404527e]
+[runnervmmtnos:39118] [ 3] /lib/x86_64-linux-gnu/libc.so.6(abort+0xdf)[0x7faee40288ff]
+[runnervmmtnos:39118] [ 4] /lib/x86_64-linux-gnu/libstdc++.so.6(+0xa5ff5)[0x7faee44a5ff5]
+[runnervmmtnos:39118] [ 5] /lib/x86_64-linux-gnu/libstdc++.so.6(+0xbb0da)[0x7faee44bb0da]
+[runnervmmtnos:39118] [ 6] /lib/x86_64-linux-gnu/libstdc++.so.6(_ZSt10unexpectedv+0x0)[0x7faee44a5a55]
+[runnervmmtnos:39118] [ 7] /lib/x86_64-linux-gnu/libstdc++.so.6(+0xa5a6f)[0x7faee44a5a6f]
+[runnervmmtnos:39118] [ 8] plumed_master(+0x146dd)[0x55d36dd316dd]
+[runnervmmtnos:39118] [ 9] /lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca)[0x7faee402a1ca]
+[runnervmmtnos:39118] [10] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b)[0x7faee402a28b]
+[runnervmmtnos:39118] [11] plumed_master(+0x15365)[0x55d36dd32365]
+[runnervmmtnos:39118] *** End of error message ***
+</pre>
+{% endraw %}
