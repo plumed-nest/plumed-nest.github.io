@@ -1,0 +1,29 @@
+**Project ID:** [plumID:23.002]({{ '/' | absolute_url }}eggs/23/002/)  
+Stderr for source:  1_Metadynamics/3_BAD_PIV/plumed.dat   
+Download: [zipped raw stdout](plumed.dat.plumed_master.stdout.txt.zip) - [zipped raw stderr](plumed.dat.plumed_master.stderr.txt.zip) 
+{% raw %}
+<pre>
+#! Only the first 1000 rows of the error file are shown below
+#! To inspect the full error file, please download the zipped raw stderr file above
+terminate called after throwing an instance of 'PLMD::Plumed::ExceptionError'
+what():
+(core/Action.cpp:372) void PLMD::Action::error(const std::string&) const
+ERROR in input to action PAIRENTROPY with label @s13 : keyword GRID_BIN is compulsory for this action
+[runnervmeorf1:06660] *** Process received signal ***
+[runnervmeorf1:06660] Signal: Aborted (6)
+[runnervmeorf1:06660] Signal code:  (-6)
+[runnervmeorf1:06660] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7f4c95645330]
+[runnervmeorf1:06660] [ 1] /lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11c)[0x7f4c9569eb2c]
+[runnervmeorf1:06660] [ 2] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0x1e)[0x7f4c9564527e]
+[runnervmeorf1:06660] [ 3] /lib/x86_64-linux-gnu/libc.so.6(abort+0xdf)[0x7f4c956288ff]
+[runnervmeorf1:06660] [ 4] /lib/x86_64-linux-gnu/libstdc++.so.6(+0xa5ff5)[0x7f4c95aa5ff5]
+[runnervmeorf1:06660] [ 5] /lib/x86_64-linux-gnu/libstdc++.so.6(+0xbb0da)[0x7f4c95abb0da]
+[runnervmeorf1:06660] [ 6] /lib/x86_64-linux-gnu/libstdc++.so.6(_ZSt10unexpectedv+0x0)[0x7f4c95aa5a55]
+[runnervmeorf1:06660] [ 7] /lib/x86_64-linux-gnu/libstdc++.so.6(+0xa5a6f)[0x7f4c95aa5a6f]
+[runnervmeorf1:06660] [ 8] plumed_master(+0x146dd)[0x561292d256dd]
+[runnervmeorf1:06660] [ 9] /lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca)[0x7f4c9562a1ca]
+[runnervmeorf1:06660] [10] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b)[0x7f4c9562a28b]
+[runnervmeorf1:06660] [11] plumed_master(+0x15365)[0x561292d26365]
+[runnervmeorf1:06660] *** End of error message ***
+</pre>
+{% endraw %}
