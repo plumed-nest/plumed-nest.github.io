@@ -1,0 +1,28 @@
+**Project ID:** [plumID:26.010]({{ '/' | absolute_url }}eggs/26/010/)  
+**Source:** dynamics_of_species_in_LiNa/con_N2/plumed.dat  
+**Originally used with PLUMED version:** 2.9  
+**Stable:** [zipped raw stdout](plumed.dat.plumed.stdout.txt.zip) - [zipped raw stderr](plumed.dat.plumed.stderr.txt.zip) - [stderr](plumed.dat.plumed.stderr)  
+**Master:** [zipped raw stdout](plumed.dat.plumed_master.stdout.txt.zip) - [zipped raw stderr](plumed.dat.plumed_master.stderr.txt.zip) - [stderr](plumed.dat.plumed_master.stderr)  
+
+{% raw %}
+<div class="plumedInputContainer">
+<div class="plumedpreheader">
+<div class="headerInfo" id="value_details_data/dynamics_of_species_in_LiNa/con_N2/plumed.dat"> Click on the labels of the actions for more information on what each action computes </div>
+<div class="containerBadge">
+<div class="headerBadge"><a href="plumed.dat.plumed.stderr"><img src="https://img.shields.io/badge/v2.10-passing-green.svg" alt="tested onv2.10" /></a></div>
+<div class="headerBadge"><a href="plumed.dat.plumed_master.stderr"><img src="https://img.shields.io/badge/master-passing-green.svg" alt="tested onmaster" /></a></div>
+</div>
+</div>
+<pre class="plumedlisting">
+<span class="plumedtooltip" style="color:blue"># vim: ft=plumed<span class="right">Enables syntax highlighting for PLUMED files in vim. See <a href="https://www.plumed.org/doc-master/user-doc/html/vim">here for more details. </a><i></i></span></span>
+<span style="color:blue" class="comment">#RESTART</span>
+<span class="plumedtooltip" style="color:green">UNITS<span class="right">This command sets the internal units for the code. <a href="https://www.plumed.org/doc-master/user-doc/html/UNITS" style="color:green">More details</a><i></i></span></span> <span class="plumedtooltip">LENGTH<span class="right">the units of lengths<i></i></span></span>=A <span class="plumedtooltip">TIME<span class="right">the units of time<i></i></span></span>=0.001  <span style="color:blue" class="comment">#Amstroeng, kJ/mol, fs</span>
+<br/><span style="display:none;" id="data/dynamics_of_species_in_LiNa/con_N2/plumed.dat">The UNITS action with label <b></b> calculates something</span><b name="data/dynamics_of_species_in_LiNa/con_N2/plumed.datN" onclick='showPath("data/dynamics_of_species_in_LiNa/con_N2/plumed.dat","data/dynamics_of_species_in_LiNa/con_N2/plumed.datN","data/dynamics_of_species_in_LiNa/con_N2/plumed.datN","brown")'>N</b>: <span class="plumedtooltip" style="color:green">GROUP<span class="right">Define a group of atoms so that a particular list of atoms can be referenced with a single label in definitions of CVs or virtual atoms. <a href="https://www.plumed.org/doc-master/user-doc/html/GROUP" style="color:green">More details</a><i></i></span></span> <span class="plumedtooltip">ATOMS<span class="right">the numerical indexes for the set of atoms in the group<i></i></span></span>=4001,4002
+
+<span style="display:none;" id="data/dynamics_of_species_in_LiNa/con_N2/plumed.datN">The GROUP action with label <b>N</b> calculates something</span><b name="data/dynamics_of_species_in_LiNa/con_N2/plumed.datdn" onclick='showPath("data/dynamics_of_species_in_LiNa/con_N2/plumed.dat","data/dynamics_of_species_in_LiNa/con_N2/plumed.datdn","data/dynamics_of_species_in_LiNa/con_N2/plumed.datdn","brown")'>dn</b>: <span class="plumedtooltip" style="color:green">DISTANCE<span class="right">Calculate the distance/s between pairs of atoms. <a href="https://www.plumed.org/doc-master/user-doc/html/DISTANCE" style="color:green">More details</a><i></i></span></span> <span class="plumedtooltip">ATOMS<span class="right">the pair of atom that we are calculating the distance between<i></i></span></span>=<b name="data/dynamics_of_species_in_LiNa/con_N2/plumed.datN">N</b>
+
+<span style="display:none;" id="data/dynamics_of_species_in_LiNa/con_N2/plumed.datdn">The DISTANCE action with label <b>dn</b> calculates the following quantities:<table  align="center" frame="void" width="95%" cellpadding="5%"><tr><td width="5%"><b> Quantity </b>  </td><td><b> Description </b> </td></tr><tr><td width="5%">dn.value</td><td>the DISTANCE between this pair of atoms</td></tr></table></span><span class="plumedtooltip" style="color:green">PRINT<span class="right">Print quantities to a file. <a href="https://www.plumed.org/doc-master/user-doc/html/PRINT" style="color:green">More details</a><i></i></span></span> <span class="plumedtooltip">ARG<span class="right">the labels of the values that you would like to print to the file<i></i></span></span>=* <span class="plumedtooltip">STRIDE<span class="right"> the frequency with which the quantities of interest should be output<i></i></span></span>=1 <span class="plumedtooltip">FILE<span class="right">the name of the file on which to output these quantities<i></i></span></span>=COLVAR
+<span class="plumedtooltip" style="color:green">FLUSH<span class="right">This command instructs plumed to flush all the open files with a user specified frequency. <a href="https://www.plumed.org/doc-master/user-doc/html/FLUSH" style="color:green">More details</a><i></i></span></span> <span class="plumedtooltip">STRIDE<span class="right">the frequency with which all the open files should be flushed<i></i></span></span>=1
+</pre></div>
+
+{% endraw %}
