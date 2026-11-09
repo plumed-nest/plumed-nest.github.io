@@ -1,0 +1,12 @@
+**Project ID:** [plumID:20.018]({{ '/' | absolute_url }}eggs/20/018/)  
+Stderr for source:  da-wt/plumed.inp   
+Download: [zipped raw stdout](plumed.inp.plumed_master.stdout.txt.zip) - [zipped raw stderr](plumed.inp.plumed_master.stderr.txt.zip) 
+{% raw %}
+<pre style="overflow:scroll;">
+#! Only the first 1000 rows of the error file are shown below
+#! To inspect the full error file, please download the zipped raw stderr file above
+ERROR : in input for command line tool driver :
+(core/Action.cpp:395) void PLMD::Action::error(const std::string&) const
+ERROR in input to action CONTACT_MATRIX_PROPER with label mat1 : keyword R_0 is compulsory for this action
+</pre>
+{% endraw %}

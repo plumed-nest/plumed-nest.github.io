@@ -1,0 +1,44 @@
+**Project ID:** [plumID:24.031]({{ '/' | absolute_url }}eggs/24/031/)  
+Stderr for source:  analysis/RNA_OneOPES/2/plumed.dat   
+Download: [zipped raw stdout](plumed.dat.plumed.stdout.txt.zip) - [zipped raw stderr](plumed.dat.plumed.stderr.txt.zip) 
+{% raw %}
+<pre style="overflow:scroll;">
+#! Only the first 1000 rows of the error file are shown below
+#! To inspect the full error file, please download the zipped raw stderr file above
+[runnervm7aw5e:64711] *** Process received signal ***
+[runnervm7aw5e:64711] Signal: Segmentation fault (11)
+[runnervm7aw5e:64711] Signal code: Address not mapped (1)
+[runnervm7aw5e:64711] Failing at address: 0x55aff0795008
+[runnervm7aw5e:64711] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7fc50cc45330]
+[runnervm7aw5e:64711] [ 1] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE16_M_rep_once_moreENSH_11_Match_modeEl+0x1b)[0x7fc50dbb57eb]
+[runnervm7aw5e:64711] [ 2] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x178)[0x7fc50dbb51c8]
+[runnervm7aw5e:64711] [ 3] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [ 4] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [ 5] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [ 6] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [ 7] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [ 8] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [ 9] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [10] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [11] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [12] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [13] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [14] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [15] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [16] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [17] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [18] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [19] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [20] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x4b8)[0x7fc50dbb5508]
+[runnervm7aw5e:64711] [21] /home/runner/opt/lib/libplumedKernel.so(_ZNSt8__detail9_ExecutorIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEENS5_12regex_traitsIcEELb1EE6_M_dfsENSH_11_Match_modeEl+0x8b)[0x7fc50dbb50db]
+[runnervm7aw5e:64711] [22] /home/runner/opt/libtorch/lib/libtorch_cpu.so(+0x35bdc4a)[0x7fc4fe5bdc4a]
+[runnervm7aw5e:64711] [23] /home/runner/opt/libtorch/lib/libtorch_cpu.so(_ZNSt8__detail17__regex_algo_implIN9__gnu_cxx17__normal_iteratorIPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEESaINS5_9sub_matchISB_EEEcNS5_12regex_traitsIcEELNS_20_RegexExecutorPolicyE0ELb0EEEbT_SI_RNS5_13match_resultsISI_T0_EERKNS5_11basic_regexIT1_T2_EENSt15regex_constants15match_flag_typeE+0x1de)[0x7fc4fe5c05ee]
+[runnervm7aw5e:64711] [24] /home/runner/opt/libtorch/lib/libtorch_cpu.so(_ZSt13regex_replaceISt20back_insert_iteratorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEN9__gnu_cxx17__normal_iteratorIPKcS6_EENS1_12regex_traitsIcEEcET_SF_T0_SG_RKNS1_11basic_regexIT2_T1_EEPKSI_NSt15regex_constants15match_flag_typeE+0x90)[0x7fc4fe5c0980]
+[runnervm7aw5e:64711] [25] /home/runner/opt/libtorch/lib/libtorch_cpu.so(+0x36e3f59)[0x7fc4fe6e3f59]
+[runnervm7aw5e:64711] [26] /home/runner/opt/libtorch/lib/libtorch_cpu.so(+0x36e7dcc)[0x7fc4fe6e7dcc]
+[runnervm7aw5e:64711] [27] /home/runner/opt/libtorch/lib/libtorch_cpu.so(+0x36e86fb)[0x7fc4fe6e86fb]
+[runnervm7aw5e:64711] [28] /home/runner/opt/libtorch/lib/libtorch_cpu.so(+0x36e8b05)[0x7fc4fe6e8b05]
+[runnervm7aw5e:64711] [29] /home/runner/opt/libtorch/lib/libtorch_cpu.so(+0x36e8bea)[0x7fc4fe6e8bea]
+[runnervm7aw5e:64711] *** End of error message ***
+</pre>
+{% endraw %}

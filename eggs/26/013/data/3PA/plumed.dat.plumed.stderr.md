@@ -1,0 +1,12 @@
+**Project ID:** [plumID:26.013]({{ '/' | absolute_url }}eggs/26/013/)  
+Stderr for source:  3PA/plumed.dat   
+Download: [zipped raw stdout](plumed.dat.plumed.stdout.txt.zip) - [zipped raw stderr](plumed.dat.plumed.stderr.txt.zip) 
+{% raw %}
+<pre style="overflow:scroll;">
+#! Only the first 1000 rows of the error file are shown below
+#! To inspect the full error file, please download the zipped raw stderr file above
+ERROR : in input for command line tool driver :
+(core/GenericMolInfo.cpp:93) PLMD::GenericMolInfo::GenericMolInfo(const PLMD::ActionOptions&)
+missing input file ../em_ww.pdb
+</pre>
+{% endraw %}
